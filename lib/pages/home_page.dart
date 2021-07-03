@@ -97,7 +97,72 @@ class HomePage extends StatelessWidget {
                   width: 224,
                   height: 55,
                   child: RaisedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      showModalBottomSheet(
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(25),
+                        ),
+                        context: context,
+                        builder: (context) {
+                          return Container(
+                            padding: EdgeInsets.symmetric(
+                              vertical: 50,
+                            ),
+                            width: MediaQuery.of(context).size.width,
+                            height: 290,
+                            decoration: BoxDecoration(
+                              color: whiteColor,
+                              borderRadius: BorderRadius.circular(18),
+                            ),
+                            child: Column(
+                              children: [
+                                Text(
+                                  'Update Foto',
+                                  style: TextStyle(
+                                    fontSize: 22,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 12,
+                                ),
+                                Text(
+                                  'You are only able to change\nthe picture profile once',
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w400,
+                                    color: greyColor,
+                                  ),
+                                  textAlign: TextAlign.center,
+                                ),
+                                SizedBox(
+                                  height: 30,
+                                ),
+                                Container(
+                                  height: 55,
+                                  width: 224,
+                                  child: RaisedButton(
+                                    onPressed: () {},
+                                    child: Text(
+                                      'Continue',
+                                      style: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.w500,
+                                        color: whiteColor,
+                                      ),
+                                    ),
+                                    color: orangeColor,
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(18),
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          );
+                        },
+                      );
+                    },
                     child: Text(
                       'Update Profile',
                       style: TextStyle(
