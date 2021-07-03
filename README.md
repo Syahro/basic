@@ -6,8 +6,9 @@ A new Flutter project.
 
 This project is a starting point for a Flutter application.
 
-Here is the display of User Interface
+The design of UI by BWA and here is the display of User Interface
 
-![UI](https://user-images.githubusercontent.com/42954205/124360809-f7a44180-dc55-11eb-9158-939e32804d69.PNG)
+![UI](https://user-images.githubusercontent.com/42954205/124360853-3b974680-dc56-11eb-8c6f-894cd476b026.PNG)
+
 
 
